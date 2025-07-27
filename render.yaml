@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: employee-khata-api
+    runtime: dotnet
+    repo: https://github.com/shreysheth/employeeKhata
+    branch: main
+    buildCommand: dotnet build EmployeeKhata.Web/EmployeeKhata.Web.csproj
+    startCommand: dotnet EmployeeKhata.Web/EmployeeKhata.Web.dll
+    env: 
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+    autoDeploy: true
