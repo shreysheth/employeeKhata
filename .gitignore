@@ -1,0 +1,55 @@
+# ========================
+# Core .NET + Visual Studio
+# ========================
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# ========================
+# ASP.NET Core Hosting
+# ========================
+wwwroot/lib/
+.env
+*.log
+
+# ========================
+# Entity Framework
+# ========================
+Migrations/
+
+# ========================
+# SQL Server / LocalDB
+# ========================
+*.mdf
+*.ldf
+*.bak
+
+# ========================
+# Publish / Build Output
+# ========================
+publish/
+*.Publish.xml
+
+# ========================
+# OS-specific junk files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Docker (optional)
+# ========================
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# ========================
+# Frontend static site
+# (no build tools = nothing to ignore)
+# ========================
+# If you later add a build step, add `dist/` or `build/` here
