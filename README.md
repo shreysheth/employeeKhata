@@ -15,8 +15,6 @@ EmployeeKhata/
 ├── EmployeeKhata.Frontend/   # index.html + script.js (API consumer)
 ├── EmployeeKhata.SQL/        # SQL Server DB creation scripts
 │
-├── .github/workflows/        # CI/CD workflows (e.g., Azure, GitHub Actions)
-├── render.yaml               # Render deployment config (if used)
 ├── .gitignore
 
 ````
@@ -26,8 +24,7 @@ EmployeeKhata/
 - **.NET Core 8**
 - **Entity Framework Core**
 - **SQL Server**
-- **Vanilla JavaScript (Frontend)**
-- **GitHub & Render/Azure for deployment**
+- **Vanilla JavaScript and HTML (Frontend)**
 
 ## 🚀 Getting Started
 
@@ -54,7 +51,7 @@ In `appsettings.json` (under `EmployeeKhata.Web`), replace with your SQL Server 
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=YOUR_SERVER;Database=EmployeeKhataDB;Trusted_Connection=True;"
+  "DefaultConnection": "Server=YOUR_SERVER;Database=EmployeeKhataDB;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True"
 }
 ```
 
@@ -77,14 +74,7 @@ dotnet run
 ## 📝 Notes
 
 * Make sure backend is running before opening `index.html`
-* Enable CORS in `Startup.cs` or `Program.cs` if testing from different origins
-* Compatible with local SQL Server or Azure SQL
-
-## 📦 Deployment
-
-* Supports deployment via **Azure App Service** or **Render**
-* `render.yaml` is provided for Render deployment
-* GitHub Actions workflows available under `.github/workflows/`
+* Update CORS in `Program.cs` if testing from different origins
 
 ## 📫 Contact / Contribute
 
