@@ -1,4 +1,4 @@
-# EmployeeKhata
+# Employee Khata
 
 A modular .NET Core 8 web application for managing employee data with a clean separation of concerns. It includes API, frontend, and SQL database integration.
 
